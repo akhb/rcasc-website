@@ -1,21 +1,9 @@
-en:
-  home: Home
-  about: About
-  product: Features
-  solution: Solution
-  news: News
-  contact: Contact
-  list: List
-  cta1: See the demo
-  cta2: Documentation
-
-fr:
-  home: Accueil
-  about: À propos
-  product: Galeries
-  solution: Solutions
-  news: Actualités
-  contact: Contact
-  list: Liste
-  cta1: Demo
-  cta2: Installation
+home: Home
+about: About
+product: Features
+solution: Solution
+news: News
+contact: Contact
+list: List
+cta1: See the demo
+cta2: Documentation

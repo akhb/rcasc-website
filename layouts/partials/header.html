@@ -1,7 +1,7 @@
-{{ $data := index site.Data.header site.Language.Lang }}
-{{ $glossary := index site.Data.glossary site.Language.Lang }}
+{{ $data := index site.Data.header }}
+{{ $glossary := index site.Data.glossary }}
 
-{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $scenes := index (index site.Data.scenes) "scenes"}}
 {{ $existScenes :=  site.Taxonomies.scenes }}
 {{ $sMapping := dict "" ""}}
 {{ range $scenes }}
@@ -9,7 +9,7 @@
 {{ end}}
 
 
-{{ $theme := index (index site.Data.products site.Language.Lang) "theme"}}
+{{ $theme := index (index site.Data.products) "theme"}}
 {{ $existtheme :=  site.Taxonomies.theme }}
 {{ $cMapping := dict "" ""}}
 {{ range $theme }}
@@ -60,10 +60,10 @@
             <a class="item" href="/#news" data-id="news">{{$glossary.news}}</a>
             <a class="item" href="/#contact" data-id="contact">{{$glossary.contact}}</a>
         </div>
-        <div class="theme">
+        <!-- <div class="theme">
             <i class="fas fa-adjust"></i>
-        </div>
-        <div class="lang">{{site.Language.Lang}}</div>
+        </div> -->
+        <!-- <div class="lang">{{site.Language.Lang}}</div> -->
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
         </div>

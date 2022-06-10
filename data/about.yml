@@ -1,34 +1,16 @@
-en:
-  title: <span>About</span>
-  backgroundTitle: About
-  portText:
-  items:
-    - icon: fa-award
-      title: Lorem ipsum dolor sit amet
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-compass
-      title: "We are on your side."
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-leaf
-      title: We care.
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-fr:
-  title: <span>À propos</span>
-  backgroundTitle: À propos
-  portText: Magna dolor nisi reprehenderit irure aliqua
-  items:
-    - icon: fa-business-time
-      title: Notre expérience, à vos côtés
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-calculator
-      title: Des prix clairs sur toute la ligne
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-bullseye
-      title: Performance & transparence
-      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-        libero, perspiciatis eos provident laborum eum dignissimos.
+title: <span>About</span>
+backgroundTitle: About
+portText:
+items:
+  - icon: fa-award
+    title: Lorem ipsum dolor sit amet
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+      libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon: fa-compass
+    title: "We are on your side."
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+      libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon: fa-leaf
+    title: We care.
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+      libero, perspiciatis eos provident laborum eum dignissimos.

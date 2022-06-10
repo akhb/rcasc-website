@@ -1,7 +1,7 @@
 <!--data-->
 
 
-{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $scenes := index (index site.Data.scenes) "scenes"}}
 {{ $existScenes :=  site.Taxonomies.scenes }}
 {{ $cMapping := dict "" ""}}
 {{ range $scenes }}
@@ -13,7 +13,7 @@
 {{ $curSceneCfg := index $cMapping $curSceneSlug}}
 {{ $curSceneVar := index site.Taxonomies.scenes $curSceneSlug}}
 
-{{ $glossary := index site.Data.glossary site.Language.Lang }}
+{{ $glossary := index site.Data.glossary }}
 
 <!--data-->
 

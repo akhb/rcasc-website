@@ -1,7 +1,7 @@
 <!--data-->
 
 
-{{ $theme := index (index site.Data.products site.Language.Lang) "theme"}}
+{{ $theme := index (index site.Data.products) "theme"}}
 {{ $existtheme :=  site.Taxonomies.theme }}
 {{ $cMapping := dict "" ""}}
 {{ range $theme }}
@@ -13,7 +13,7 @@
 {{ $curCategoryCfg := index $cMapping $curCategorySlug}}
 {{ $curCategoryVar := index site.Taxonomies.theme $curCategorySlug}}
 
-{{ $glossary := index site.Data.glossary site.Language.Lang }}
+{{ $glossary := index site.Data.glossary }}
 
 <!--data-->
 
