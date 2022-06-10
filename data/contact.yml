@@ -1,24 +1,11 @@
-en:
-  backgroundTitle: Contact
-  phone: +86 571 1234 5678
-  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident, eum eligendi blanditiis ex explica
-  location: Rennes, Bretagne
-  subtitle:
-  title: <span>Contact</span> Us
-  languages: English, French, German
-  email: contact@example.org
-  fax: +86 571 1234 5678
-fr:
-  backgroundTitle: Contact
-  phone: "+86 571 1234 5678"
-  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-    provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
-    asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
-    adipisci.
-  location: Rennes, Bretagne
-  subtitle: Nous contacter
-  title: Nous <span>contacter</span>
-  languages: English, French
-  email: contact@example.org
-  fax: +86 571 1234 5678
+backgroundTitle: Contact
+phone: +86 571 1234 5678
+detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
+  provident, eum eligendi blanditiis ex explica
+location: Rennes, Bretagne
+subtitle:
+title: <span>Contact</span> Us
+languages: English, French, German
+email: contact@example.org
+fax: +86 571 1234 5678
+

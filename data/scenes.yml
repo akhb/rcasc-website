@@ -1,59 +1,34 @@
-en:
-  title: Custom <span>Solutions</span>
-  backgroundTitle: Solutions
-  portText: In tempor esse aute sint Lorem. Dolor velit qui anim sunt mollit
-    excepteur ipsum mollit quis.
-  scenes:
-    - coverImage: /media/laptop-loading.svg
-      name: Performance
-      cSlug: s1
-      icon: fa-gear
-      description: Choose the right technologies
-    - coverImage: /media/books_png.png
-      name: Documentation
-      cSlug: s2
-      icon: fa-book
-      description: Occaecat velit elit consectetur adipisicing.
-    - coverImage: /media/security_svg.svg
-      name: Security
-      cSlug: s3
-      icon: fa-lock
-      description: Caecat velit elit consectetur adipisicing.
-    - coverImage: /media/web_svg.svg
-      name: Multilingue
-      cSlug: s2
-      icon: fa-globe
-      description: Velit elit consectetur adipisicing occaecat.
-    - coverImage: /media/telemedicine_svg.svg
-      name: Relation
-      cSlug: s4
-      description: Adipisicing ullamco ex id deserunt ea adipisicing. Enim in sint non
-        reprehenderit sunt aliquip sunt et dolore ipsum nisi aute. Cupidatat
-        pariatur pariatur occaecat eiusmod magna aute aliqua exercitation.
-        Exercitation et amet nisi sunt id sit ex eiusmod sit deserunt.
-      icon: fa-heart
-fr:
-  title: <span>Solutions</span> by Industry
-  backgroundTitle: Welcome
-  portText: " Here are our industry solutions that have helped many customers"
-  scenes:
-    - coverImage: /media/scene1.jpg
-      name: 化工
-      icon: fa-person-digging
-      cSlug: s1
-      description: Cellulose ethers comprise methylcellulose
-    - coverImage: /media/scene1.jpg
-      name: 食品
-      icon: fa-burger
-      cSlug: s2
-      description: Cellulose ethers comprise methylcellulose
-    - coverImage: /media/scene1.jpg
-      name: 石油
-      cSlug: s3
-      icon: fa-oil-well
-      description: Cellulose ethers comprise methylcellulose,
-    - coverImage: /media/scene1.jpg
-      name: 制药
-      cSlug: s4
-      icon: fa-capsules
-      description: Cellulose ethers comprise methylcellulose
+title: Custom <span>Solutions</span>
+backgroundTitle: Solutions
+portText: In tempor esse aute sint Lorem. Dolor velit qui anim sunt mollit
+  excepteur ipsum mollit quis.
+scenes:
+  - coverImage: /media/laptop-loading.svg
+    name: Performance
+    cSlug: s1
+    icon: fa-gear
+    description: Choose the right technologies
+  - coverImage: /media/books_png.png
+    name: Documentation
+    cSlug: s2
+    icon: fa-book
+    description: Occaecat velit elit consectetur adipisicing.
+  - coverImage: /media/security_svg.svg
+    name: Security
+    cSlug: s3
+    icon: fa-lock
+    description: Caecat velit elit consectetur adipisicing.
+  - coverImage: /media/web_svg.svg
+    name: Multilingue
+    cSlug: s2
+    icon: fa-globe
+    description: Velit elit consectetur adipisicing occaecat.
+  - coverImage: /media/telemedicine_svg.svg
+    name: Relation
+    cSlug: s4
+    description: Adipisicing ullamco ex id deserunt ea adipisicing. Enim in sint non
+      reprehenderit sunt aliquip sunt et dolore ipsum nisi aute. Cupidatat
+      pariatur pariatur occaecat eiusmod magna aute aliqua exercitation.
+      Exercitation et amet nisi sunt id sit ex eiusmod sit deserunt.
+    icon: fa-heart
+

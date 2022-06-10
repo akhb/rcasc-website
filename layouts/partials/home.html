@@ -1,8 +1,8 @@
-{{ $data := index site.Data site.Language.Lang}}
-{{ $data := index site.Data.home  site.Language.Lang }}
+{{ $data := index site.Data }}
+{{ $data := index site.Data.home  }}
 
-{{ $ := index site.Data.header site.Language.Lang }}
-{{ $glossary := index site.Data.glossary site.Language.Lang }}
+{{ $ := index site.Data.header }}
+{{ $glossary := index site.Data.glossary }}
 
 <section class="section sec1" id="home">
     <div class="left-header">

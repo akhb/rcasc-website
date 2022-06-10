@@ -6,29 +6,17 @@ media_folder: "/static/media" # Folder where user uploaded files should go
 public_folder: "/media"
 editor:
   preview: false
-locale: 'fr'
 
 # Allow local visit
 # You need to run at the root of the project `npx netlify-cms-proxy-server`
 local_backend: true
 
-# i18n https://www.netlifycms.org/docs/beta-features/#i18n-support
-i18n:
-  structure: multiple_folders
-  locales: [ en, fr ]
-  default_locale: en
-
-
 # collections configuration
 collections:
   - name: "sections"
     label: "Global settings"
-    i18n:
-      structure: single_file
-      locales: [ en, fr ]
     files:
       - file: "data/home.yml"
-        i18n: true
         label: "Home"
         name: "home"
         fields: [
@@ -153,23 +141,8 @@ collections:
         # { label: "Summary", name: "summary", widget: "text" },
         { label: ".", name: "body", widget: "markdown" },
       ]
-  - name: "news-fr"
-    label: "News (fr)"
-    folder: "content/fr/news"
-    path: "{{slug}}"
-    media_folder: "{{media_folder}}"
-    public_folder: "{{public_folder}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
-        { label: "Cover Image", name: "image", widget: "image" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
   - name: "products"
-    label: "Products (English)"
+    label: "Products"
     folder: "content/english/products"
     path: "{{slug}}"
     media_folder: "{{media_folder}}"
@@ -189,50 +162,9 @@ collections:
         { label: "Summary", name: "summary", widget: "text" },
         { label: "Body", name: "body", widget: "markdown" },
       ]
-  - name: "products-fr"
-    label: "Products (fr)"
-    folder: "content/fr/products"
-    path: "{{slug}}"
-    media_folder: "{{media_folder}}"
-    public_folder: "{{public_folder}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string"},
-        { label: "Category", name: "theme", widget: "select", multiple: true, options:  [
-          { label: "c1", value: "c1" },
-          { label: "c2", value: "c2" },
-          { label: "c3", value: "c3" },
-          { label: "c4", value: "c4" },
-          { label: "c5", value: "c5" },
-        ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
   - name: "scene"
-    label: "Scene (English)"
+    label: "Scene"
     folder: "content/english/scenes"
-    path: "{{slug}}"
-    media_folder: "{{media_folder}}"
-    public_folder: "{{public_folder}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
-          { label: "化工", value: "s1" },
-          { label: "食品", value: "s2" },
-          { label: "石油", value: "s3" },
-          { label: "制药", value: "s4" },
-        ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
-  - name: "scene-fr"
-    label: "Scene (fr)"
-    folder: "content/fr/scenes"
     path: "{{slug}}"
     media_folder: "{{media_folder}}"
     public_folder: "{{public_folder}}"
