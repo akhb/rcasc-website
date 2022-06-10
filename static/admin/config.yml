@@ -20,12 +20,12 @@ collections:
         label: "Home"
         name: "home"
         fields: [
-          { label: "Title", name: "title", widget: string, i18n: true },
-          { label: "Slogan", name: "slogan", widget: string, i18n: true },
-          { label: "Description", name: "shortDescription", widget: "text", i18n: true },
-          { label: "Header Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
-          { label: "Register", name: "register", widget: string, i18n: true },
-          { label: "Copyright", name: "copyright", widget: string, i18n: true },
+          { label: "Title", name: "title", widget: string },
+          { label: "Slogan", name: "slogan", widget: string },
+          { label: "Description", name: "shortDescription", widget: "text" },
+          { label: "Header Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+          { label: "Register", name: "register", widget: string },
+          { label: "Copyright", name: "copyright", widget: string },
         ]
       - file: "data/about.yml"
         label: "About"
@@ -34,12 +34,12 @@ collections:
         description: "Go to edit the about section"
         fields:
           [
-            { label: "Title", name: "title", widget: string, i18n: true },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
-            { label: "Items", name: "items", widget: "list", i18n: true, fields: [
-              { label: "Icon", name: "icon", widget: string , i18n: true },
-              { label: "Title", name: "title", widget: string, i18n: true },
-              { label: "Content", name: "content", widget: text, i18n: true }]
+            { label: "Title", name: "title", widget: string },
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "Items", name: "items", widget: "list", fields: [
+              { label: "Icon", name: "icon", widget: string  },
+              { label: "Title", name: "title", widget: string },
+              { label: "Content", name: "content", widget: text }]
             }
           ]
       - file: "data/products.yml"
@@ -48,20 +48,20 @@ collections:
         i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string, i18n: true },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
-            { label: "PortText", name: "portText", widget: "text", i18n: true, required: false },
-            { label: "Categories", name: "theme", widget: "list", i18n: true, fields: [
-              { label: "Image", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
-              { label: "Name", name: "name", widget: string, i18n: true },
-              { label: "theme", name: "cSlug", widget: select, i18n: true, options: [
+            { label: "Title", name: "title", widget: string },
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "PortText", name: "portText", widget: "text", required: false },
+            { label: "Categories", name: "theme", widget: "list", fields: [
+              { label: "Image", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+              { label: "Name", name: "name", widget: string },
+              { label: "theme", name: "cSlug", widget: select, options: [
                 { label: "c1", value: "c1" },
                 { label: "c2", value: "c2" },
                 { label: "c3", value: "c3" },
                 { label: "c4", value: "c4" },
                 { label: "c5", value: "c5" },
               ] },
-              { label: "Description", name: "description", widget: text , i18n: true },
+              { label: "Description", name: "description", widget: text  },
             ] }
           ]
       - file: "data/scenes.yml"
@@ -70,20 +70,20 @@ collections:
         i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string, i18n: true },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
-            { label: "PortText", name: "portText", widget: "text", i18n: true, required: false },
-            { label: "scenes", name: "scenes", widget: "list", i18n: true, fields: [
-              { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
-              { label: "Name", name: "name", widget: string, i18n: true },
-              { label: "Scene", name: "cSlug", widget: select, i18n: true, options: [
+            { label: "Title", name: "title", widget: string },
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "PortText", name: "portText", widget: "text", required: false },
+            { label: "scenes", name: "scenes", widget: "list", fields: [
+              { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+              { label: "Name", name: "name", widget: string },
+              { label: "Scene", name: "cSlug", widget: select, options: [
                 { label: "化工", value: "s1" },
                 { label: "食品", value: "s2" },
                 { label: "石油", value: "s3" },
                 { label: "制药", value: "s4" },
               ] },
-              { label: "Description", name: "description", widget: text , i18n: true },
-              { label: "icon", name: "icon", widget: string , i18n: true },
+              { label: "Description", name: "description", widget: text  },
+              { label: "icon", name: "icon", widget: string  },
             ] }
           ]
       - file: "data/news.yml"
@@ -92,9 +92,9 @@ collections:
         i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string, i18n: true },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
-            { label: "portText", name: "portText", widget: string, i18n: true, required: false },
+            { label: "Title", name: "title", widget: string },
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "portText", name: "portText", widget: string, required: false },
           ]
       - file: "data/contact.yml"
         label: "Contact"
@@ -102,15 +102,15 @@ collections:
         i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string, i18n: true },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
-            { label: "Subtitle", name: "subtitle", widget: string, i18n: true, required: false },
-            { label: "Detail", name: "detail", widget: string, i18n: true },
-            { label: "Location", name: "location", widget: string , i18n: true },
-            { label: "Email", name: "email", widget: string , i18n: true, required: false },
-            { label: "Fax", name: "fax", widget: string, i18n: true, required: false },
-            { label: "Phone", name: "phone", widget: string , i18n: true, required: false },
-            { label: "Languages", name: "languages", widget: string, i18n: true },
+            { label: "Title", name: "title", widget: string },
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "Subtitle", name: "subtitle", widget: string, required: false },
+            { label: "Detail", name: "detail", widget: string },
+            { label: "Location", name: "location", widget: string  },
+            { label: "Email", name: "email", widget: string , required: false },
+            { label: "Fax", name: "fax", widget: string, required: false },
+            { label: "Phone", name: "phone", widget: string , required: false },
+            { label: "Languages", name: "languages", widget: string },
           ]
       - file: "data/glossary.yml"
         label: "Glossary"
@@ -118,13 +118,13 @@ collections:
         i18n: true
         fields:
           [
-            { label: "home", name: "home", widget: string, i18n: true },
-            { label: "about", name: "about", widget: string, i18n: true },
-            { label: "product", name: "product", widget: string, i18n: true },
-            { label: "solution", name: "solution", widget: string, i18n: true },
-            { label: "news", name: "news", widget: string, i18n: true },
-            { label: "contact", name: "contact", widget: string, i18n: true },
-            { label: "list", name: "list", widget: string, i18n: true },
+            { label: "home", name: "home", widget: string },
+            { label: "about", name: "about", widget: string },
+            { label: "product", name: "product", widget: string },
+            { label: "solution", name: "solution", widget: string },
+            { label: "news", name: "news", widget: string },
+            { label: "contact", name: "contact", widget: string },
+            { label: "list", name: "list", widget: string },
           ]
   - name: "news"
     label: "Articles"
@@ -135,7 +135,7 @@ collections:
     create: true
     fields:
       [
-        { label: "Titre", name: "title", widget: "string" },
+        { label: "Title", name: "title", widget: "string" },
         # { label: "Publish Date", name: "date", widget: "datetime"},
         # { label: "Cover Image", name: "image", widget: "image" },
         # { label: "Summary", name: "summary", widget: "text" },
